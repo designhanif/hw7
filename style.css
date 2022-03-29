@@ -1,0 +1,185 @@
+.c{
+    text-align: center;
+    text-shadow: 5px 5px 1px sandybrown;
+}
+.c1{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    margin:100px auto;
+    box-shadow: 5px 5px 3px rgb(22, 31, 22);
+}
+.c1 img{
+    width: 300px;
+    height: 60%;
+}
+.c2{
+    width: 300px;
+    height: 300px;
+    position:relative ;
+    margin-top: auto;
+    background-color: aqua;
+}
+.c2::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 20px;
+    top: 90%;
+    bottom: 10px;
+    left: 10%;
+    background-color: black;
+    transform-origin: left;
+    transform: skewY(5deg);
+    z-index: -1;
+    filter:blur(4px)
+}
+.c2::after{
+    content:"";
+    position: absolute;
+    width: 90%;
+    height: 20px;
+    top: 90%;
+    bottom: 10px;
+    right: 10%;
+    background-color: black;
+    transform-origin: right;
+    transform: skewY(-5deg);
+    z-index: -1;
+    filter: blur(4px);
+}
+.c3{
+    width: 300px;
+    height: 300px;
+    position:relative ;
+    margin: 100px auto;
+    background-color: aqua; 
+}
+.c3::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 20%;
+    bottom: -50px;
+    left: 5%;
+    background-color: black;
+    border-radius: 50%;
+    z-index: -1;
+    filter: blur(8px);
+}
+.c4{
+    width: 300px;
+    height: 300px;
+    position:relative ;
+    margin: 100px auto;
+    background-color: aqua;
+}
+.c4::before{
+    content: "";
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    left: 5%;
+    bottom: -20px;
+    background-color: rgb(156, 183, 185);
+    z-index: -1;
+    filter: blur(3px);
+}
+.c5{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    margin:100px auto;
+}
+.c6{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    margin: 100px auto;
+    left: 25%;
+    border-radius: 25px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.4), 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.c7{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    margin:100px auto;
+}
+.c8{
+    width: 150px;
+    height: 150px;
+    background-color: aqua;
+    position: absolute;
+    margin: 100px auto;
+    left: 25%;
+    border-radius: 25px;
+    box-shadow: -15px -15px 15px rgba(255, 255, 255, 0.4), 15px 15px 15px rgba(0, 0, 0, 0.5),
+    inset -15px -15px 15px rgba(255, 255, 255, 0.4), inset 15px 15px 15px rgba(0, 0, 0, 0.5);
+}
+.c9{
+    width: 90px;
+    height: 90px;
+    position: relative;
+    margin: 100px auto;
+    background-image: url(download.png);
+    background-repeat: no-repeat;
+    background-position: 40px 50px;
+    border-radius: 5px;
+}
+.c9:hover{
+    background-position: -252px 50px;
+}
+.c10{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    margin:100px auto;
+    border-radius: 25px;
+    transform: rotate(-45deg);
+}
+.c10 h2{
+    text-align: center;
+    position: relative;
+    top: 50%;
+    transform: rotate(45deg);
+    color: blueviolet;
+}
+.c11{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    margin:100px auto;
+    transform: scaleX(5);
+}
+.c12{
+    width: 300px;
+    height: 300px;
+    background-color: aqua;
+    position: relative;
+    margin: 100px auto;
+    transform: translate(40px 200px);
+}
+.c13{
+    width: 300px;
+    height: 300px;
+    position: relative;
+    margin:100px auto;
+    background-color: aqua;
+    transition-property: all;
+    transition-duration: .5s;
+    transition-delay: .8s;
+}
+.c13:hover{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(190, 255, 10);
+    border-radius: 50%;
+    transform: rotate(180deg);
+}
